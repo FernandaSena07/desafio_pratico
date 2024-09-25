@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar - Sistema Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Formulário de Edição -->
+        <div class="row mt-4">
+            <div class="col">
+                <h1>Tela de Edição</h1>
+                <form action="/editar" method="POST">
+                    <input type="hidden" name="id" value="{{post.id}}">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control" id="telefone" name="endereco" placeholder="Digite o endereço">
+                    </div>
+                    <div class="mb-3">
+                        <label for="bairro" class="form-label">Bairro:</label>
+                        <input type="text" class="form-control" id="telefone" name="bairro" placeholder="Digite o bairro">
+                    </div>
+                    <div class="mb-3"></div>
+                        <label for="endereco" class="form-label">CEP:</label>
+                        <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" name="Digite a cidade">
+                    </div>
+                    <div class="mb-3"></div>
+                        <label for="estado" class="form-label">Estado:</label>
+                        <input type="text" class="form-control" id="estado" name="Digite o estado">
+                    </div>
+                    <div class="mb-3"></div>
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite o telefone" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

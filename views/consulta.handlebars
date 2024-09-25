@@ -1,0 +1,31 @@
+<div class="container">
+
+    <div class="row mt-4">
+        <div class="col">
+        <h1>Tela de Consulta</h1>
+            <!-- Tabela de Dados sem bordas -->
+            <table class="table">
+                <thead class="bg-primary text-white">
+                                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Ações</th> <!-- Adicionando uma coluna para ações -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each posts}} <!-- Corrigido de 'post' para 'posts' -->
+                    <tr>
+                        <td>{{this.nome}}</td>
+                        <td>{{this.telefone}}</td>
+                        <td>
+                            <a href="/editar/{{this.id}}" class="btn btn-primary btn-sm">Editar</a>
+                            <a href="/excluir/{{this.id}}" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
